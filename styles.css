@@ -235,7 +235,10 @@ header{
     color:aliceblue
 }
 
-
+#about{
+    align-items: center;
+    width: 100%;
+}
 .about-heading{
     font-size: 2.5em;
     font-weight: 500;
@@ -261,8 +264,15 @@ header{
 }
 
 .img-pepsu img{
+    margin: 20px;
    max-width: 350px;
    max-height: 360px;
+    border-radius: .5cm;
+    overflow: hidden;
+}
+
+.img-pepsu img::after{
+    border: solid 5px crimson;
 
 }
 
@@ -370,7 +380,7 @@ footer{
         
     }
     .about-left{
-    flex-direction: row;
+    flex-direction: column-reverse;
     }
     .img-pepsu{
         margin: 0 60px;
@@ -413,14 +423,19 @@ footer{
         max-height: 60px;
         
     }
-    .about{
+    #about{
         text-align: center;
-    }
+        align-items: center;
+        }
     .about-left{
     flex-direction: row;
     }
     .about-content{
         max-width: 700px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
   
     }
 
@@ -444,6 +459,12 @@ footer{
         display:flex;
         flex-direction: row;
 
+    }
+    .memory-content-text{
+        width:400px;
+        margin:0 50px;
+        align-items: center;
+        justify-content: center;
     }
   
 }
