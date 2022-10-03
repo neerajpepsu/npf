@@ -1,0 +1,389 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.section-heading{
+    font-size: 1.5em;
+    margin: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-heading span{
+    color: crimson;
+
+}
+
+.logo{
+    width: 30px;
+    margin:2vw;
+}
+
+.home2{
+    min-height: 100vh;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home{
+  background-image:url(./img/home-background.jpg) ;
+  background-size:cover ;
+  position:relative;
+  z-index:1;
+  letter-spacing: 0.5em;
+  font-weight:bolder;
+}
+
+#home::after{
+    content: "";
+    border-radius: 0.3cm;
+    position: absolute;
+    left: 0;
+    top:0;
+    height:100%;
+    width: 100%;
+    opacity: .86;
+    background-color: black;
+    z-index: -1;
+}
+
+
+#home .home2{
+    font-size: 5vw;
+    color:transparent;
+    animation:home-text 3s ease forwards;
+}
+#home .social{
+  font-size: .5em;
+  color:aliceblue;
+  margin: 0 50px;
+  bottom: 70px;
+  position: absolute;
+  padding:10px;
+  right:30px;
+  border:solid crimson 1px;
+  text-transform: uppercase;
+}
+
+#home .social:hover{
+    font-size: .5em;
+    color:aliceblue;
+    margin: 0 50px;
+    bottom: 70px;
+    position: absolute;
+    padding:10px;
+    border:solid crimson 1px;
+    background-color: crimson;
+    transition: .5s ease;
+    cursor: pointer;
+  }
+
+.social-links{
+    width: 180px;
+    bottom: 10px;
+    right:45px;
+    position: absolute;
+}
+
+
+.perks-heading img{
+    margin-right: 15px;
+    min-width: 40px;
+    max-height: 35px;
+}
+.perks-heading{
+    font-size: 3em;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 1500px;
+    margin:0 auto;
+    padding-top:100px;
+    color: crimson;
+}
+.perks-item-heading{
+    text-align: center;
+}
+.icon{
+    text-align: center;
+}
+
+.perks-item-group{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.perks-item{
+   flex-basis: 70%;
+   border-radius: 0.1cm;
+   max-height: 400px;
+   margin: 30px;
+   margin-top: 20px;
+   overflow: hidden;
+}
+
+.perks-item:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease transform;
+}
+
+.perks-item-content{
+    padding: 20px 20px 10px 20px;
+    background-image: linear-gradient(#000000ed,#4c3629c1);
+    height:260px
+
+}
+.perks-item-bg{
+   background-image: url(./img/diet.jpeg);
+   background-size: cover;
+   min-height:200px ;
+   position: relative;
+   z-index: 1;
+}
+.perks-item-bg:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease transform;
+}
+
+.perks-item-bg::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    height:100%;
+    width: 100%;
+    opacity: 0.55;
+    background-color: black;
+    z-index: -1;
+}
+
+
+.perks-item .perks-item-heading{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 20px;
+    letter-spacing: .2em;
+    color: aliceblue;
+}
+
+.perks-item p{
+    font-size: .7em;
+    font-weight: 300;
+    letter-spacing: .01em;
+    padding: 20px;
+    word-spacing: .1em;
+    line-height: 1.2;
+    color:aliceblue
+}
+
+
+.about-heading{
+    font-size: 2.5em;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 1500px;
+    margin:0 auto;
+    padding:50px 0;
+    color: crimson;
+}
+.about-content{
+    letter-spacing: .1em;
+    font-weight: 350;
+    line-height: 1.2;
+    padding: 0 20px 20px 20px ;
+    text-align: center;
+}
+.about-left{
+    display: flex;
+    flex-direction: column-reverse;
+    margin:30px auto ;
+    text-align: center;
+}
+
+.img-pepsu img{
+   min-width: 250px;
+   min-height: 360px;
+}
+
+.memory-content-text{
+    font-size: 1em;
+    letter-spacing: .1em;
+    font-weight: 200;
+}
+
+.contact-item-container{
+    width: 80%;
+    height: 40%;
+    margin: 0 auto;
+
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+    margin:20px;
+    box-shadow: 0 0 18px 0 #0000002c;
+    border-radius: .2cm;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-item:hover{
+    box-shadow: 0 0 5px 0 #0000002c;
+    transition: .5s ease box-shadow;
+}
+
+
+.contact-item-logo img{
+    width: 60px;
+}
+
+.contact-item-heading{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.contact-item-info{
+ font-size:.9rem;
+ font-weight:300;
+ line-height: 2;
+}
+
+footer{
+    min-height: 200px;
+    justify-content: center;
+    text-align: center;
+}
+
+/*key frames*/
+@keyframes home-text{
+    100%{
+        color:white;
+
+    }
+
+}
+
+@keyframes slidein {
+    0%{
+        
+    }
+
+    25%{
+
+    }
+
+    50%{
+
+    }
+    100%{
+
+    }
+
+}
+
+
+@media only screen and (min-width:600px){
+    .perks-item{
+        flex-basis: 45%;
+        margin:2%;
+        max-height: 400px;
+        max-width: 300px;
+    }    
+    .perks-heading{
+        margin-bottom: 40px;
+        font-size: 4em;
+    }
+    .perks-heading img{
+        max-height: 60px;
+        
+    }
+    .about-left{
+    flex-direction: row;
+    }
+    .img-pepsu{
+        margin: 0 60px;
+        width: 600px;
+        
+    }
+    .contact-item{
+        flex-basis: 30%;
+        margin:2%;
+    }
+
+    .contact-item-container{
+        display:flex;
+        flex-direction: row;
+
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width:1200px){
+    .perks-item{
+        flex-basis: 20%;
+        margin:2.5%;
+
+    }    
+    .perks-heading{
+        margin-bottom: 40px;
+        font-size: 4em;
+    }
+    .perks-heading img{
+        max-height: 60px;
+        
+    }
+    .about{
+        text-align: center;
+    }
+    .about-left{
+    flex-direction: row;
+    }
+    .about-content{
+        max-width: 700px;
+  
+    }
+
+    .img-pepsu{
+        margin: 0 60px;
+        width: 600px;
+        
+    }
+    .contact-item{
+        flex-basis: 30%;
+        margin:2%;
+    }
+
+    .contact-item-container{
+        display:flex;
+        flex-direction: row;
+
+    }
+  
+}
