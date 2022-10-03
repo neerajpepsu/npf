@@ -6,10 +6,57 @@
     box-sizing: border-box;
     font-family: 'Montserrat',sans-serif;
 }
-
 a{
     text-decoration: none;
 }
+ 
+header{
+    width: 100%;
+    height: 8vh;
+    align-content: center;
+    position: fixed;
+    z-index: 999;
+    background-color: #000000c8;
+}
+.logo{
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    margin: 10px 20px;
+
+}
+.navbar{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar ul li{
+    text-decoration: none;
+    letter-spacing: .1em;
+    padding:10px 2vw; 
+    transition: .5s ease;
+
+}
+
+.navbar ul li:hover{
+    border:solid crimson 1px;
+    background-color: crimson;
+}
+
+.navbar ul li a{
+    color:aliceblue
+}
+
+
+
+
+
 
 .section-heading{
     font-size: 1.5em;
@@ -23,10 +70,6 @@ a{
 
 }
 
-.logo{
-    width: 30px;
-    margin:2vw;
-}
 
 .home2{
     min-height: 100vh;
@@ -200,8 +243,7 @@ a{
     text-align: center;
     text-transform: uppercase;
     max-width: 1500px;
-    margin:0 auto;
-    padding:50px 0;
+    padding:60px 0;
     color: crimson;
 }
 .about-content{
@@ -219,8 +261,9 @@ a{
 }
 
 .img-pepsu img{
-   min-width: 250px;
-   min-height: 360px;
+   max-width: 350px;
+   max-height: 360px;
+
 }
 
 .memory-content-text{
@@ -304,6 +347,12 @@ footer{
 
 }
 
+footer{
+    background-color: #110022;
+    padding: 20px 30px;
+    color:white;
+
+}
 
 @media only screen and (min-width:600px){
     .perks-item{
@@ -326,6 +375,11 @@ footer{
     .img-pepsu{
         margin: 0 60px;
         width: 600px;
+        
+    }
+    .img-pepsu img{
+        flex-basis: 100%;
+        flex-wrap: wrap;
         
     }
     .contact-item{
@@ -372,9 +426,15 @@ footer{
 
     .img-pepsu{
         margin: 0 60px;
-        width: 600px;
-        
+        width: 600px;   
     }
+
+    .img-pepsu img{
+        flex-basis: 90%;
+        flex-wrap: wrap;  
+        flex-direction: row;
+    }
+
     .contact-item{
         flex-basis: 30%;
         margin:2%;
