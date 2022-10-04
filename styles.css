@@ -85,8 +85,8 @@ header{
 .manual-nav{
     position:absolute;
     width:100%;
-    top:180%;
     display: flex;
+    margin-top: 73vh;
     justify-content: center;
 }
 
@@ -431,19 +431,17 @@ footer{
 }
 .boxing-container{
     width:100%;
-    height:80vh;
+    height:90vh;
 }
 .boxing{
-    position: absolute;
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
 }
 .boxing p{
     margin:3vh 5vh;
     letter-spacing: .1em;
-    width:500px;
-
+    line-height: 1.5;
 }
 .boxing img{
     height: 70vh;
@@ -512,7 +510,13 @@ footer{
         height:70vh;
         padding:5vh 15vh;
     }
-    
+    .boxing{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 20vh;
+    }
     .perks-item{
         flex-basis: 20%;
         margin:2.5%;
