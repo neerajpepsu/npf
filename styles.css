@@ -63,7 +63,7 @@ header{
 
 .slides{
     display:flex;
-    width: 1000%;
+    width: 500%;
     height:7vh;
 
 }
@@ -105,16 +105,16 @@ header{
     transition: .5s;
 }
 
-#r21:checked ~ .s1{
+#r1:checked ~ .s1{
     margin-left: 0;
 }
-#r22:checked ~ .s1{
+#r2:checked ~ .s1{
     margin-left: -20%;
 }
-#r23:checked ~ .s1{
+#r3:checked ~ .s1{
     margin-left: -40%
 }
-#r24:checked ~ .s1{
+#r4:checked ~ .s1{
     margin-left: -60%;
 }
 
@@ -134,16 +134,16 @@ header{
 .auto-nav div:not(:last-child){
     margin-right:3vw;
 }
-#r21:checked ~ .auto-nav .auto-b1{
+#r1:checked ~ .auto-nav .auto-b1{
     background-color: crimson;
 }
-#r22:checked ~ .auto-nav .auto-b2{
+#r2:checked ~ .auto-nav .auto-b2{
     background-color: crimson;
 }
-#r23:checked ~ .auto-nav .auto-b3{
+#r3:checked ~ .auto-nav .auto-b3{
     background-color: crimson;
 }
-#r24:checked ~ .auto-nav .auto-b4{
+#r4:checked ~ .auto-nav .auto-b4{
     background-color: crimson;
 }
 
