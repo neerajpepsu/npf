@@ -375,10 +375,9 @@ header{
 }
 
 .contact-item-container{
-    width: 80%;
+    width: 100%;
     height: 40%;
     margin: 0 auto;
-
 }
 
 .contact-item{
@@ -392,7 +391,6 @@ header{
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 100%;
 }
 
 .contact-item:hover{
@@ -412,7 +410,7 @@ header{
 }
 
 .contact-item-info{
- font-size:.9rem;
+ font-size: .9rem;
  font-weight:300;
  line-height: 1.6;
 }
@@ -437,7 +435,7 @@ footer .site-name,footer div{
 
 .boxing-container{
     width:100%;
-    height:90vh;
+    height:70vw;
 }
 .boxing{
     display: flex;
@@ -504,6 +502,17 @@ footer .site-name,footer div{
         flex-direction: row;
 
     }
+    .boxing p{
+        margin:3vh 5vh;
+        letter-spacing: .1em;
+        line-height: 1.5;
+        font-size: 1em;
+    }
+    .boxing img{
+        width: 45vw;
+        border-radius: .3cm;
+        margin: 0 auto;
+    }
 
 }
 
@@ -518,12 +527,15 @@ footer .site-name,footer div{
         height:70vh;
         padding:5vh 15vh;
     }
-    .boxing{
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: 0 20vh;
+    .logo{
+        padding: 0;
+        margin: 0;
+        width: 35px;
+        margin: 10px 20px; 
+    }
+   .navbar ul li a{
+    color:aliceblue;
+    font-size :.9em;
     }
     .perks-item{
         flex-basis: 20%;
@@ -563,6 +575,7 @@ footer .site-name,footer div{
         flex-basis: 90%;
         flex-wrap: wrap;  
         flex-direction: row;
+        width: 25vw;
     }
 
     .contact-item{
@@ -576,10 +589,29 @@ footer .site-name,footer div{
 
     }
     .memory-content-text{
-        width:400px;
+        width:30vw;
         margin:0 50px;
         align-items: center;
         justify-content: center;
+        font-size: 1em;
+    }
+    .boxing{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 20vh;
+    }
+    .boxing p{
+        margin:3vh 5vh;
+        letter-spacing: .1em;
+        line-height: 1.5;
+        font-size: 1em;
+    }
+    .boxing img{
+        width: 30vw;
+        border-radius: .3cm;
+        margin: 0 auto;
     }
   
 }
